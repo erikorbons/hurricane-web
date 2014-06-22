@@ -1,0 +1,68 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.hc-editor {
+	position: relative;
+	z-index: 0;
+}
+
+.hc-rich-text {
+	position: relative;
+	display: block;
+	border: solid 2px black;
+	padding: 4px;
+	z-index: 2;
+}
+
+.hc-rich-text p {
+	/*text-align: justify;*/
+	white-space: pre-wrap;
+}
+
+.hc-selection {
+	z-index: 1;
+}
+
+.hc-cursor {
+	position: absolute;
+	width: 2px;
+	background-color: black;
+}
+
+.hc-blink {
+	animation: blink 1s infinite;
+	-webkit-animation: blink 1s infinite; 
+}
+
+.hc-textarea {
+	position: absolute;
+	
+	background-color: white;
+	opacity: 0;
+	
+	margin: 0;
+	padding: 0;
+	border: none;
+	
+	z-index: 3;
+	
+	resize: none;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes blink {
+	opacity: 0.1;
+}
