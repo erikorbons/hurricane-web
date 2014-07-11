@@ -337,6 +337,8 @@ jQuery(document).ready (function () {
 	 */
 	function getAdjacentTextNode (node, direction) {
 		var adjacentSibling = direction == 'left' ? 'previousSibling' : 'nextSibling';
+		
+		
 	}
 	
 	/**
